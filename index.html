@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Khobragade | IIM Bangalore</title>
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
     <style>
@@ -41,10 +40,8 @@
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen">
-    <!-- Animated Background -->
-    <div id="vanta-globe" class="fixed inset-0 -z-10"></div>
     
-    <!-- Navigation -->
+<!-- Navigation -->
     <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
@@ -70,15 +67,7 @@
     <!-- Hero Section -->
     <section id="home" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <div class="relative inline-block">
-                    <img src="http://static.photos/office/640x360/42" alt="Aditya Khobragade" class="rounded-full w-48 h-48 object-cover border-4 border-white shadow-xl">
-                    <div class="absolute -bottom-2 -right-2 bg-indigo-600 text-white rounded-full p-2 shadow-lg">
-                        <i data-feather="award" class="w-6 h-6"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="md:w-1/2 mt-10 md:mt-0">
+<div class="md:w-1/2 mt-10 md:mt-0">
                 <h1 class="hero-text text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                     Hi, I'm <span class="text-indigo-600">Aditya Khobragade</span>
                 </h1>
@@ -96,184 +85,138 @@
             </div>
         </div>
     </section>
-
-    <!-- Skills Section -->
+<!-- Enhanced Skills Section -->
     <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white/60 rounded-xl shadow-sm backdrop-blur-sm">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">My Expertise</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Skills Breakdown</h2>
             <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Business Communication -->
-            <div class="skill-card bg-white p-8 rounded-xl shadow-md transition duration-300 hover:border-indigo-500 border border-transparent">
-                <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
-                    <i data-feather="message-square" class="w-8 h-8 text-indigo-600"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3">Business Communication</h3>
-                <p class="text-gray-600">
-                    Expert in corporate communication strategies, presentation skills, and professional writing with experience in executive-level reporting.
-                </p>
-            </div>
-            <!-- Financial Accounting -->
-            <div class="skill-card bg-white p-8 rounded-xl shadow-md transition duration-300 hover:border-indigo-500 border border-transparent">
-                <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
-                    <i data-feather="dollar-sign" class="w-8 h-8 text-indigo-600"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3">Financial Accounting</h3>
-                <p class="text-gray-600">
-                    Proficient in financial analysis, budgeting, cost management, and strategic financial planning using modern accounting tools.
-                </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i data-feather="message-square" class="w-6 h-6 text-indigo-600 mr-3"></i>
+                    Business Communication
+                </h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Corporate communication strategies</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Executive-level presentation skills</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Professional business writing</span>
+                    </li>
+                </ul>
             </div>
             
-            <!-- Data Analysis -->
-            <div class="skill-card bg-white p-8 rounded-xl shadow-md transition duration-300 hover:border-indigo-500 border border-transparent">
-                <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
-                    <i data-feather="bar-chart-2" class="w-8 h-8 text-indigo-600"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3">Data Analysis</h3>
-                <p class="text-gray-600">
-                    Skilled in data processing, visualization and analysis using spreadsheets (Excel, Google Sheets) with advanced formulas and pivot tables.
-                </p>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i data-feather="dollar-sign" class="w-6 h-6 text-indigo-600 mr-3"></i>
+                    Financial Accounting
+                </h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Financial analysis & reporting</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Budgeting & cost management</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Strategic financial planning</span>
+                    </li>
+                </ul>
             </div>
-<!-- Website Development -->
-            <div class="skill-card bg-white p-8 rounded-xl shadow-md transition duration-300 hover:border-indigo-500 border border-transparent">
-                <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
-                    <i data-feather="code" class="w-8 h-8 text-indigo-600"></i>
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3">Website Development</h3>
-                <p class="text-gray-600">
-                    Skilled in front-end development with HTML, CSS, JavaScript and modern frameworks. Experience in creating responsive, user-friendly websites.
-                </p>
+            
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i data-feather="bar-chart-2" class="w-6 h-6 text-indigo-600 mr-3"></i>
+                    Data Analysis
+                </h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Advanced Excel & Google Sheets</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Data visualization techniques</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Pivot tables & advanced formulas</span>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch</h2>
-            <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
-        </div>
-        
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="md:flex">
-                <div class="md:w-1/2 bg-indigo-600 p-12 text-white">
-                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <i data-feather="mail" class="w-6 h-6 mr-4 mt-1"></i>
-                            <div>
-                                <h4 class="font-medium">Email</h4>
-                                <p class="text-indigo-100">aditya.khobragade24@iimb.ac.in</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i data-feather="map-pin" class="w-6 h-6 mr-4 mt-1"></i>
-                            <div>
-                                <h4 class="font-medium">Location</h4>
-                                <p class="text-indigo-100">Indian Institute of Management Bangalore</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-12">
-                        <h4 class="font-medium mb-4">Connect with me</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center hover:bg-indigo-800 transition">
-                                <i data-feather="linkedin" class="w-5 h-5"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center hover:bg-indigo-800 transition">
-                                <i data-feather="twitter" class="w-5 h-5"></i>
-                            </a>
-                            <a href="#" class="w-10 h-10 rounded-full bg-indigo-700 flex items-center justify-center hover:bg-indigo-800 transition">
-                                <i data-feather="github" class="w-5 h-5"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:w-1/2 p-12">
-                    <form>
-                        <div class="mb-6">
-                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
-                        </div>
-                        <div class="mb-6">
-                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent">
-                        </div>
-                        <div class="mb-6">
-                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-6 rounded-lg font-medium transition duration-300">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                    <i data-feather="code" class="w-6 h-6 text-indigo-600 mr-3"></i>
+                    Website Development
+                </h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>HTML5, CSS3 & JavaScript</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Responsive web design</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0"></i>
+                        <span>Modern frameworks & tools</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="bg-gray-800 text-white py-12">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h3 class="text-xl font-bold mb-6">Aditya Khobragade</h3>
                 <p class="text-gray-400 mb-8">Student at IIM Bangalore</p>
-<div class="flex justify-center space-x-6 mb-8">
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i data-feather="linkedin"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i data-feather="twitter"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i data-feather="github"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i data-feather="mail"></i>
-                    </a>
+                <div class="flex flex-col items-center">
+                    <div class="flex space-x-6 mb-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="mailto:aditya.khobragade24@iimb.ac.in" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="mail"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Email: aditya.khobragade24@iimb.ac.in
+                    </p>
                 </div>
-                <p class="text-gray-400 text-sm">
+<p class="text-gray-400 text-sm">
                     &copy; 2025 Aditya Khobragade. All rights reserved.
 </p>
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-    <script>
-        VANTA.GLOBE({
-            el: "#vanta-globe",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x3b82f6,
-            backgroundColor: 0xffffff,
-            size: 0.80
-        });
-
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.md\\:hidden .mobile-menu').classList.toggle('hidden');
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Feather icons
-        feather.replace();
-    </script>
+    <style>
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        .mobile-menu-button:hover {
+            color: #3b82f6;
+            background-color: #f3f4f6;
+        }
+    </style>
 </body>
 </html>
